@@ -355,6 +355,7 @@
 				44DC85751F3C505B00AA7949 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
