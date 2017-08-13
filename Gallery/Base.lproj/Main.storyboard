@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topmenu" translatesAutoresizingMaskIntoConstraints="NO" id="zyj-bM-yi1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zyj-bM-yi1" secondAttribute="height" multiplier="375:58" id="7e2-Xv-jHf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottommenu" translatesAutoresizingMaskIntoConstraints="NO" id="LUV-3z-MwO">
+                                <rect key="frame" x="0.0" y="585" width="375" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LUV-3z-MwO" secondAttribute="height" multiplier="32:7" id="jHa-kL-yBg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BA6-Hd-4Em">
+                                <rect key="frame" x="16" y="594" width="65" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="guide"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="titleLabel" text="Gallery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nT4-yY-Xbj">
+                                <rect key="frame" x="128" y="28" width="118" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.043500207364559174" green="0.89081269502639771" blue="0.67615878582000732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zyj-bM-yi1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="COx-FI-rWp"/>
+                            <constraint firstAttribute="trailing" secondItem="LUV-3z-MwO" secondAttribute="trailing" id="SPz-kC-Era"/>
+                            <constraint firstItem="zyj-bM-yi1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bDa-mH-pnI"/>
+                            <constraint firstItem="LUV-3z-MwO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="btf-Tz-VsV"/>
+                            <constraint firstAttribute="bottom" secondItem="LUV-3z-MwO" secondAttribute="bottom" id="ktW-fl-I7u"/>
+                            <constraint firstAttribute="trailing" secondItem="zyj-bM-yi1" secondAttribute="trailing" id="mN5-oD-8Jh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bottommenu" width="375" height="79"/>
+        <image name="guide" width="65" height="64"/>
+        <image name="topmenu" width="375" height="57"/>
+    </resources>
+</document>
